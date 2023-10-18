@@ -19,6 +19,7 @@ pipeline {
 		}
 
 	} 
+
 	post {
 		always {
 			echo "runs always"
@@ -29,5 +30,8 @@ pipeline {
 		failure {
 			echo "runs when fails"
 		}
+		//failure {
+		//	echo "runs when fails"
+		//}
 	}
 }
