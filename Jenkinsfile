@@ -18,15 +18,5 @@ pipeline {
 			}
 		}
 
-	} post {
-		always {
-			echo 'runs always'
-		}
-		success {
-			echo 'runs when successfull'
-		}
-		failure {
-			echo 'runs when fails'
-		}
-	}
+	} 
 }
