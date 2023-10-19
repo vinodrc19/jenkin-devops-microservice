@@ -1,10 +1,11 @@
 //Declerative pipeline
 pipeline {
-	agent {
-		docker {
-			image "maven:3.6.0-jdk-8"
-		}
-	}
+	agent any
+	//agent {
+	//	docker {
+	//		image "maven:3.6.0-jdk-8"
+	//	}
+	//}
 	//agent { 
 		//label "docker" { 
 		//dockerContainer {	
@@ -16,8 +17,17 @@ pipeline {
 	stages {
 		stage('Pull Docker Image') {
             steps {
-				echo "not doing any thing"
-				//docker pull maven
+                script {
+                    // Define the Docker image to use
+                    def dockerImage = docker.image('maven:3.6.3')
+
+                    // Run Docker commands within the container
+                    dockerImage.inside {
+                        sh 'mvn clean install'  // Replace with your build commands
+                        sh 'docker build -t my-custom-image .'
+                        sh 'docker push my-custom-image'
+                    }
+                }
             }
 		}
 		stage('Test') {
