@@ -23,7 +23,8 @@ pipeline {
 
 
                     // Pull the image
-                    dockerImage.pull()
+                    ////dockerImage.pull()
+					echo "not doing any thing"
 
                     // You can also specify additional options if needed
                     // dockerImage.pull('--all-tags')
