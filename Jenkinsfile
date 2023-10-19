@@ -27,6 +27,7 @@ pipeline {
                     // dockerImage.pull('--all-tags')
                 }
             }
+		}
 		stage('Test') {
 			steps {
 				echo "Test"
