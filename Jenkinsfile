@@ -14,8 +14,8 @@ pipeline {
             steps {
                 script {
                     // Define the name of the Docker image and tag you want to pull
-                    def imageName = 'ubuntu'
-                    def imageTag = 'latest'
+                    def imageName = 'maven'
+                    def imageTag = '3.6.0-jdk-8'
 
                     // Pull the Docker image
                     def dockerImage = docker.image("${imageName}:${imageTag}")
