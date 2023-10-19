@@ -4,6 +4,7 @@ pipeline {
 		docker {
 			image "maven:3.6.0-jdk-8"
 		}
+	}
 	//agent { 
 		//label "docker" { 
 		//dockerContainer {	
