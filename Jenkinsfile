@@ -1,6 +1,9 @@
 //Declerative pipeline
 pipeline {
-	agent any
+	agent {
+		docker {
+			image "maven:3.6.0-jdk-8"
+		}
 	//agent { 
 		//label "docker" { 
 		//dockerContainer {	
@@ -13,7 +16,7 @@ pipeline {
 		stage('Pull Docker Image') {
             steps {
 				echo "not doing any thing"
-				docker pull maven
+				//docker pull maven
             }
 		}
 		stage('Test') {
