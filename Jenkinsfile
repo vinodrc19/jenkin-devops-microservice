@@ -18,7 +18,9 @@ pipeline {
                     def imageTag = '3.6.0-jdk-8'
 
                     // Pull the Docker image
-                    def dockerImage = docker.image("${imageName}:${imageTag}")
+                    //def dockerImage = docker.image("${imageName}:${imageTag}")
+					def dockerImage = docker.image("maven:3.6.0-jdk-8")
+
 
                     // Pull the image
                     dockerImage.pull()
