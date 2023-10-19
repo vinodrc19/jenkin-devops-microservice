@@ -1,21 +1,32 @@
 //Declerative pipeline
 pipeline {
-	//agent any
-	agent { 
+	agent any
+	//agent { 
 		//label "docker" { 
-		dockerContainer {	
-			docker pull maven:3.6.3
-			//image 'maven:3.6.3'
-			//image 'maven:3.6.0-jdk-8'
-		} 
-	}
+		//dockerContainer {	
+		//	docker pull maven:3.6.3
+		//	//image 'maven:3.6.3'
+		//	//image 'maven:3.6.0-jdk-8'
+		//} 
+	//}
 	stages {
-		stage('Build') {
-			steps {
-				sh "mvn --version"
-				echo "Build"
-			}
-		}
+		stage('Pull Docker Image') {
+            steps {
+                script {
+                    // Define the name of the Docker image and tag you want to pull
+                    def imageName = 'ubuntu'
+                    def imageTag = 'latest'
+
+                    // Pull the Docker image
+                    def dockerImage = docker.image("${imageName}:${imageTag}")
+
+                    // Pull the image
+                    dockerImage.pull()
+
+                    // You can also specify additional options if needed
+                    // dockerImage.pull('--all-tags')
+                }
+            }
 		stage('Test') {
 			steps {
 				echo "Test"
