@@ -13,6 +13,7 @@ pipeline {
 		stage('Pull Docker Image') {
             steps {
 				echo "not doing any thing"
+				docker pull maven
             }
 		}
 		stage('Test') {
