@@ -15,21 +15,8 @@ pipeline {
 		//} 
 	//}
 	stages {
-		stage('Pull Docker Image') {
-            steps {
-                script {
-                    // Define the Docker image to use
-                    def dockerImage = docker.image('maven:3.6.3')
 
-                    // Run Docker commands within the container
-                    dockerImage.inside {
-                        sh 'mvn clean install'  // Replace with your build commands
-                        sh 'docker build -t my-custom-image .'
-                        sh 'docker push my-custom-image'
-                    }
-                }
-            }
-		}
+
 		stage('Test') {
 			steps {
 				echo "Test"
