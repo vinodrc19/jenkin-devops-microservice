@@ -12,7 +12,7 @@ pipeline {
 				//echo "After sh"
 				echo "$PATH"
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
-				echo "BUILD_IUD - $env.BUILD_IUD"
+				echo "BUILD_IUD - $env.BUILD_ID"
 				echo "JOB_NAME -$env.JOB_NAME"
 				echo "BUILD_TAG - $env.BUILD_TAG"
 				echo "BUILD_URL - $env.BUILD_URL"
