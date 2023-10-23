@@ -1,7 +1,7 @@
-C:\Vinod\eclipse-workspace\my-jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\util\environment\EnvironmentConfigurationLogger.java
-C:\Vinod\eclipse-workspace\my-jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\CurrencyExchangeServiceApplicationH2.java
-C:\Vinod\eclipse-workspace\my-jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\resource\ExchangeValueRepository.java
-C:\Vinod\eclipse-workspace\my-jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\resource\CurrencyExchangeController.java
-C:\Vinod\eclipse-workspace\my-jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\util\environment\InstanceInformationService.java
-C:\Vinod\eclipse-workspace\my-jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\HelloWorld.java
-C:\Vinod\eclipse-workspace\my-jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\resource\ExchangeValue.java
+C:\Vinod\eclipse-workspace\jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\CurrencyExchangeServiceApplicationH2.java
+C:\Vinod\eclipse-workspace\jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\resource\CurrencyExchangeController.java
+C:\Vinod\eclipse-workspace\jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\util\environment\EnvironmentConfigurationLogger.java
+C:\Vinod\eclipse-workspace\jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\resource\ExchangeValueRepository.java
+C:\Vinod\eclipse-workspace\jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\util\environment\InstanceInformationService.java
+C:\Vinod\eclipse-workspace\jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\HelloWorld.java
+C:\Vinod\eclipse-workspace\jenkin-devops-microservice\src\main\java\com\in28minutes\microservices\currencyexchangeservice\resource\ExchangeValue.java
