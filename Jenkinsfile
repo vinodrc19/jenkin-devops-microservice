@@ -56,6 +56,7 @@ pipeline {
 				echo "Build Docker Image"
 				//"docker build -t vebhav/currency-exchange-devops:$env.BUILD_TAG"
 				script {
+					docker run -e "DOCKER_HOST=tcp://localhost:2375 -v //var/run/docker.sock:/var/run/docker.sock ..."
 					dockerImage = docker.build("vebhav/currency-exchange-devops:${env.BUILD_TAG}")
 				}
 			}
