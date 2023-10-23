@@ -61,6 +61,7 @@ pipeline {
 			}
 		}
 
+
 		stage('Push Docker Image') {
 			steps {
 				echo "Integration Test"
