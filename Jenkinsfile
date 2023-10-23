@@ -56,14 +56,10 @@ pipeline {
 				echo "Build Docker Image"
 				//"docker build -t vebhav/currency-exchange-devops:$env.BUILD_TAG"
 				script {
-					//sh "docker run -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v /etc/docker:/etc/docker ..."
-					
 					dockerImage = docker.build("vebhav/currency-exchange-devops:${env.BUILD_TAG}")
 				}
 			}
 		}
-
-
 
 		stage('Push Docker Image') {
 			steps {
