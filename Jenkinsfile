@@ -42,6 +42,26 @@ pipeline {
 				sh "mvn failsafe:integration-test failsafe:verify"
 			}
 		}
+		stage('Build Docker Image') {
+			steps {
+				echo "Build Docker Image"
+				//"docker build -t vebhav/currency-exchange-devops:$env.BUILD_TAG"
+				script {
+					//docker.build("vebhav/currency-exchange-devops:${env.BUILD_TAG}")
+				}
+			}
+		}
+		stage('Push Docker Image') {
+			steps {
+				echo "Integration Test"
+				sh "mvn failsafe:integration-test failsafe:verify"
+			}
+		}
+		
+		
+		
+		
+		
 	} 
 	post {
 		always {
