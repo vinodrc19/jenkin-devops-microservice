@@ -54,10 +54,10 @@ pipeline {
 		stage('Build Docker Image') {
 			steps {
 				echo "Build Docker Image"
-				docker build -t "vebhav/currency-exchange-devops"
-				//script {
-				//	dockerImage = docker.build("vebhav/currency-exchange-devops:${env.BUILD_TAG}")
-				//}
+				//"docker build -t vebhav/currency-exchange-devops:$env.BUILD_TAG"
+				script {
+					dockerImage = docker.build("vebhav/currency-exchange-devops:${env.BUILD_TAG}")
+				}
 			}
 		}
 
